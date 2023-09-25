@@ -1,0 +1,6 @@
+-- EXCLUINDO TABELA ANTIGA E RENOMEANDO TABELA NOVA
+DROP TABLE viagens.usuarios;
+ALTER TABLE viagens.usuarios_nova RENAME viagens.usuarios;
+
+-- ALTERANDO TAMANHO DA COLUNA
+ALTER TABLE viagens.usuarios MODIFY COLUMN endereco VARCHAR(150);
